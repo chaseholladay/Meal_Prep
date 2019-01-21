@@ -2,6 +2,7 @@
     <span>
         <home-hero></home-hero>
         <home-details></home-details>
+        <home-plans></home-plans>
     </span>
 </template>
 
@@ -13,7 +14,8 @@ export default {
     name: 'home',
     components: {
         HomeHero,
-        HomeDetails
+        HomeDetails,
+        HomePlans
     }
 };
 </script>
