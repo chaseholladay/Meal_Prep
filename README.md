@@ -405,7 +405,7 @@ Next we have a <v-layout> for our header text announcing our Available Meal Plan
 
 Here is the code for the HomePlans.vue file:
 
-<template>
+<!-- <template> -->
     <v-container grid-list-lg>
         <v-layout row>
             <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5">Available Meal Plans</v-flex>
