@@ -11,3 +11,6 @@
         name: 'Menu'
     };
 </script>
+
+<style scoped>
+</style>
