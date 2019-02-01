@@ -53,6 +53,7 @@ export default {
             drawer: false,
             items: [
                 { title: 'Menu' },
+                { title: 'Profile' },
                 { title: 'Sign In' },
                 { title: 'Join' }
             ]
@@ -62,4 +63,8 @@ export default {
 </script>
 
 <style scoped>
+a {
+    color: white;
+    text-decoration: none;
+}
 </style>
