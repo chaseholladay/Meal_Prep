@@ -24,7 +24,7 @@
                             </div>
                         </div>
                     </v-card-text>
-                    <v-card-actions>
+                    <v-card-actions v-if="['menu'].includes($route.name)">
                         <v-btn outline block color="green" @click="showRecipes('keto')">Select This Plan</v-btn>
                     </v-card-actions>
                 </v-card>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                     </v-card-text>
-                    <v-card-actions>
+                    <v-card-actions v-if="['menu'].includes($route.name)">
                         <v-btn outline block color="green" @click="showRecipes('paleo')">Select This Plan</v-btn>
                     </v-card-actions>
                 </v-card>
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                     </v-card-text>
-                    <v-card-actions>
+                    <v-card-actions v-if="['menu'].includes($route.name)">
                         <v-btn outline block color="green" @click="showRecipes('vegan')">Select This Plan</v-btn>
                     </v-card-actions>
                 </v-card>
@@ -87,6 +87,7 @@
 export default {
     name: 'HomePlans'
 };
+import axios from 'axios';
 </script>
 
 <style scoped>
