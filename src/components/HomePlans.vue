@@ -24,6 +24,9 @@
                         </div>
                     </v-card-title>
                 </v-card>
+                <v-card-actions v-if="['menu'].includes($route.name)">
+                            <v-btn outline block color="green" @click="showRecipes('keto')">Select This Plan</v-btn>
+                </v-card-actions>
             </v-flex>
 
             <v-flex xs12 sm12 md4>
@@ -45,6 +48,9 @@
                         </div>
                     </v-card-title>
                 </v-card>
+                <v-card-actions v-if="['menu'].includes($route.name)">
+    <v-btn outline block color="green" @click="showRecipes('paleo')">Select This Plan</v-btn>
+</v-card-actions>
             </v-flex>
 
             <v-flex xs12 sm12 md4>
@@ -61,11 +67,14 @@
                     <v-card-title primary-title>
                         <div>
                             <h3 class="headline mb-0">Vegan</h3>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris felis, varius rutrum massa a, dignissim ornare dui. Cras eget velit eu dui tristique lobortis sit amet vel tellus.
+                            <div>The vegan diet abstains from the use of animal products. The vegan diet does not consume meat, diary products, eggs or any all other animal-derived ingredients.
                             </div>
                         </div>
                     </v-card-title>
                 </v-card>
+                <v-card-actions v-if="['menu'].includes($route.name)">
+    <v-btn outline block color="green" @click="showRecipes('vegan')">Select This Plan</v-btn>
+</v-card-actions>
             </v-flex>
         </v-layout>
     </v-container>
