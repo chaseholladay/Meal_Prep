@@ -85,9 +85,13 @@
 
 <script>
 export default {
-    name: 'HomePlans'
+    name: 'HomePlans',
+    methods: {
+        showRecipes(plan) {
+            this.$store.dispatch('getRecipes', plan);
+        }
+    }
 };
-import axios from 'axios';
 </script>
 
 <style scoped>
